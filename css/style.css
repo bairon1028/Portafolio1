@@ -26,6 +26,34 @@ header section nav ul, main section article .list-none{
     transition: 1s;
 }
 
+.contactar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.correo{
+    margin-right: 11px;
+}
+.formulario{
+    margin: 9px;
+}
+.formulario input{
+    border-radius: 5px;
+    background-color: #ffffffa2;
+    width: 400px;
+}
+
+.input_mensaje{
+    height: 100px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
 @media (max-width: 767px){
     .sobremi{
         width: 80%;
