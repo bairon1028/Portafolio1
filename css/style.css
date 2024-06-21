@@ -2,7 +2,9 @@
 header section nav ul, main section article .list-none{
     list-style: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0px;
     margin: 0px;
