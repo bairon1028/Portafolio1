@@ -1,9 +1,107 @@
+/*GENERAL*/
 header section nav ul, main section article .list-none{
     list-style: none;
 }
 
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.title{
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+
+/*Cabezera + Navegador*/
+.header-nav{
+    background-color: black;
+}
+
+
+
+.section-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* d-flex flex-column flex-md-row justify-content-center justify-content-sm-between p-3 */
+}
+
+.titulo-portafolio{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    /*d-flex text-light justify-content-center*/
+}
+
+.nav-pag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*d-flex align-items-center justify-content-center*/
+}
+
+.div-nav{
+    display: flex;
+    /*row justify-content-center*/
+}
+
+.buscador{
+    padding: 0px 5px 0px 5px;
+    color: #fff;
+    text-decoration: none;
+    /* col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover*/
+}
+
+.buscador li:hover{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+
+/*Sobre mi*/
+
+.section-sobremi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    /*d-flex flex-column flex-md-row justify-content-between align-items-center mt-5*/
+}
+
 .sobremi{
     width: 50%;
+    margin-left: 20px;
+}
+
+.text-sobremi{
+    font-size: 18px;
+    text-align: justify
+}
+
+.article-info{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    /*mt-4 d-md-flex w-100 mb-4 mb-md-1*/
+}
+
+.div-edad-ubi{
+    margin-left: 40px;
+}
+
+.edad p, .ubi p, .español p, .ingles p{
+    font-size: 22px;
+}
+
+.div-idiomas{
+    margin-left: 40px;
 }
 
 .imagen-personal{
@@ -12,18 +110,110 @@ header section nav ul, main section article .list-none{
 .imagen-personal img{
     max-width: 70%;
     height: auto;
-    
+    border-radius: 35px 35px 15px 15px;
+    margin-left: 80px;
+    /*rounded-5 rounded-top mx-auto d-block*/
 }
 
-.carta{
+
+/*Experiencias*/
+
+.section-experiencias{
+    margin-top: 30px;
+}
+
+.article-experiencias{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.carta-experiencias{
+    width: 30%;
+    text-align: justify;
+}
+
+/*Proyectos*/
+
+.section-proyectos{
+    margin-top: 30px;
+}
+
+.article-proyectos{
+    display: flex; justify-content: space-evenly;
+}
+
+
+.div-proyectos{
+    display: flex;
+    justify-content: center;
+}
+
+.cartaproyectos{
+    background-color: #fff;
+    width: 65%;
+    border: 1px solid #6969694f;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 10px 5px 5px #6969692a;
+    transition: 1s;
+}
+
+.img-cartaproyectos{
+    width: 100%;
+    border-bottom: 1px solid #6969694f;
+}
+
+.img-cartaproyectos img{
+    max-width: 100%; 
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.title-proyectos{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.text-proyectos{
+    margin: 0px 20px;
+}
+
+
+/*Habilidades*/
+
+.section-habilidades{
+    margin-top: 30px;
+}
+
+.article-habilidades{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+
+/*Estudios*/
+
+.section-estudios{
+    margin-top: 30px;
+}
+
+.article-estudios{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.carta-estudios{
     width: 30%;
     text-align: justify;
 }
 
 
-.cartaproyectos{
-    width: 65%;
-    transition: 1s;
+/*Contacto*/
+
+.section-contactar{
+    margin-top: 30px;
 }
 
 .contactar{
@@ -42,9 +232,35 @@ header section nav ul, main section article .list-none{
     background-color: #ffffffa2;
     width: 400px;
 }
+.nombre-email{
+    height: 20px;
+}
 
 .input_mensaje{
     height: 100px;
+}
+
+button{
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+
+/*Video*/
+
+.section-video{
+    margin-bottom: 30px;
 }
 
 .video{
@@ -118,4 +334,15 @@ header section nav ul, main section article .list-none{
 #btn-mas:checked ~ .btn-mas label{
     transform: rotate(135deg);
     font-size: 25px;
+}
+
+/*Copyrigth*/
+
+footer{
+    background-color: black;
+}
+
+.article-copyrigth{
+    color: white;
+    padding: 20px;
 }

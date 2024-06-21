@@ -4,42 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8a64e33b73.js" crossorigin="anonymous"></script>
     <title>Portafolio</title>
 </head>
 
-<body class="bg-body-secondary">
+<body class="">
     <!--Navegador-->
-    <header class="bg-dark">
-        <section class="d-flex flex-column flex-md-row justify-content-center justify-content-sm-between p-3">
+    <header class="header-nav">
+        <section class="section-nav">
             <div>
-                <h1 class="d-flex text-light justify-content-center">Portafolio</h1>
+                <h1 class="titulo-portafolio">Portafolio</h1>
             </div>
 
-            <nav class="d-flex align-items-center justify-content-center">
-                <ul class="d-flex text-light m-auto me-5">
-                    <div class="row justify-content-center">
-                        <a href="#sobremii" class="col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+            <nav class="nav-pag">
+                <ul class="ul-nav">
+                    <div class="div-nav">
+                        <a href="#sobremii" class="buscador">
                             <li class="">Sobremí</li>
                         </a>
-                        <a href="#experiencias" class="col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                        <a href="#experiencias" class="buscador">
                             <li class="">Experiencias</li>
                         </a>
-                        <a href="#proyectos" class="col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                        <a href="#proyectos" class="buscador">
                             <li class="">Proyectos</li>
                         </a>
-                        <a href="#habilidades" class="col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                        <a href="#habilidades" class="buscador">
                             <li class="">Habilidades</li>
                         </a>
-                        <a href="#estudios" class="col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                        <a href="#estudios" class="buscador">
                             <li class="">Estudios</li>
                         </a>
-                        <a href="#contactar" class="col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                        <a href="#contactar" class="buscador">
                             <li>Contactar</li>
                         </a>
-                        <a href="#video" class="col mx-1 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                        <a href="#video" class="buscador">
                             <li>Video</li>
                         </a>
                     </div>
@@ -51,49 +53,52 @@
 
     <main>
         <!--Inicio de sobre mi-->
-        <section id="sobremii" class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5">
-            <article class="sobremi ms-md-4">
+        <section id="sobremii" class="section-sobremi">
+            <article class="sobremi">
                 <h2>Sobre mí</h2>
-                <p class="fs-5" style="text-align: justify;">Hola, soy un desarrollador web apasionado con poca experiencia. Mi amor por la
+                <p class="text-sobremi">Hola, soy un desarrollador web apasionado con poca experiencia. Mi amor por la
                     tecnología y la creatividad me ha llevado a explorar el mundo del desarrollo web. Aunque enfrento
                     desafíos, estoy decidido a aprender y mejorar cada día. Me sumerjo en tutoriales, proyectos
                     personales y colaboraciones para ampliar mis habilidades. Mi entusiasmo y curiosidad me guían hacia
                     un futuro brillante en este emocionante campo.
                 </p>
-                <article class="container mt-4 d-md-flex w-100 mb-4 mb-md-1">
-                    <div class="ms-md-3 row d-md-flex flex-md-column">
-                        <div class="col-6">
+                <article class="article-info">
+                    <div class="div-edad-ubi">
+                        <div class="edad">
                             <h3>Edad</h3>
-                            <p class="fs-4">17</p>
+                            <p class="">17</p>
                         </div>
-                        <div class="col-6">
+                        <div class="ubi">
                             <h3>Ubicación</h3>
-                            <p>Bogotá D.C, Colombia</p>
+                            <p>Bogotá D.C, 
+                                <br>
+                                Colombia
+                            </p>
                         </div>
                     </div>
-                    <div class="row d-md-flex flex-md-column ms-md-4 me-md-4">
-                        <div class="col-6">
+                    <div class="div-idiomas">
+                        <div class="español">
                             <h3>Español</h3>
-                            <p class="fs-4">Nativo</p>
+                            <p class="">Nativo</p>
                         </div>
-                        <div class="col-6">
+                        <div class="ingles">
                             <h3 class="">Ingles</h3>
-                            <p class="fs-4">Intermedio</p>
+                            <p class="">Intermedio</p>
                         </div>
                     </div>
 
                 </article>
             </article>
             <article class="imagen-personal">
-                <img src="img/Bairon.jpg" alt="" height="300" class="rounded-5 rounded-top mx-auto d-block">
+                <img src="img/Bairon.jpg" alt="" height="300">
             </article>
         </section>
 
         <!--Experiencias-->
-        <section id="experiencias" class="mx-4 mt-5 ms-md-5">
-            <h1>Experiencias</h1>
-            <article class="d-md-flex justify-content-evenly mt-5">
-                <div class="carta">
+        <section id="experiencias" class="section-experiencias">
+            <h1 class="title">Experiencias</h1>
+            <article class="article-experiencias">
+                <div class="carta-experiencias">
                     <h2>Desarrollador Web</h2>
                      
                     <p>
@@ -104,7 +109,7 @@
                         plataforma.
                     </p>
                 </div>
-                <div class="carta">
+                <div class="carta-experiencias">
                     <h2>Soporte</h2>
                     <p>
                         Asakura Technology | Diciembre 2023 - Presente
@@ -116,34 +121,34 @@
         </section>
 
         <!--Proyectos-->
-        <section id="proyectos" class="ms-md-4 mt-5 ms-md-5 mb-5">
-            <h1 class="mb-5 ms-4">Proyectos</h1>
-            <article class="d-md-flex justify-content-evenly">
-                <div class="proyecto d-flex justify-content-center">
-                    <div class="bg-white cartaproyectos border border-secondary-subtle rounded-4 mt-2 shadow">
-                        <div class="w-100 border-bottom border-secondary-subtle">
-                            <img src="img/asakura.png" alt="" class="img-fluid rounded-top-4">
+        <section id="proyectos" class="section-proyectos">
+            <h1 class="title">Proyectos</h1>
+            <article class="article-proyectos">
+                <div class="div-proyectos">
+                    <div class="cartaproyectos">
+                        <div class="img-cartaproyectos">
+                            <img src="img/asakura.png" alt="" class="">
                         </div>
-                        <h3 class="ms-2 mt-3">Pagina Web</h3>
-                        <p class="mx-2">Desarrolle una pagina web utilizando HTML5 y CSS3.</p>
+                        <h3 class="title-proyectos">Pagina Web</h3>
+                        <p class="text-proyectos">Desarrolle una pagina web utilizando HTML5 y CSS3.</p>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <div class="bg-white cartaproyectos border border-secondary-subtle rounded-4 mt-2 shadow">
-                        <div class="w-100 border-bottom border-secondary-subtle">
-                            <img src="img/crud.png" alt="" class="img-fluid rounded-top-4">
+                <div class="div-proyectos">
+                    <div class="cartaproyectos">
+                        <div class="img-cartaproyectos">
+                            <img src="img/crud.png" alt="" class="">
                         </div>
-                        <h3 class="ms-2 mt-3">CRUD</h3>
-                        <p class="mx-2">Desarrolle una pantalla crud utilizando HTML5 y CSS3.</p>
+                        <h3 class="title-proyectos">CRUD</h3>
+                        <p class="text-proyectos">Desarrolle una pantalla crud utilizando HTML5 y CSS3.</p>
                     </div>
                 </div>
             </article>
         </section>
 
         <!--Habilidades-->
-        <section id="habilidades" class="mx-4 mt-5 ms-md-5 mb-5">
-            <h1>Habilidades</h1>
-            <article class="d-md-flex justify-content-evenly mt-5">
+        <section id="habilidades" class="section-habilidades">
+            <h1 class="title">Habilidades</h1>
+            <article class="article-habilidades">
                 <div>
                     <h2>Desarrollo Web</h2>
 
@@ -177,10 +182,10 @@
         </section>
         
         <!--Estudios-->
-        <section id="estudios" class="mx-4 mt-5 ms-md-5 mb-5">
-            <h1>Estudios</h1>
-            <article class="d-md-flex justify-content-evenly mt-5">
-                <div class="carta me-4 my-2">
+        <section id="estudios" class="section-estudios">
+            <h1 class="title">Estudios</h1>
+            <article class="article-estudios">
+                <div class="carta-estudios">
                     <h2>Bachiller</h2>
                     <p>Me encuentro graduado por colegio distrital del bachillerato</p>
                 </div>
@@ -188,17 +193,17 @@
         </section>
 
         <!--Contactar-->
-        <section id="contactar" class="mx-4 mt-5 ms-md-5 mb-5">
-            <h1>Contactar</h1>
+        <section id="contactar" class="section-contactar">
+            <h1 class="title">Contactar</h1>
             <article class="contactar"> 
                 <form action="">
                     <div class="formulario">
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                        <input type="text" class="nombre-email" name="nombre" id="nombre" placeholder="Tu nombre">
                     </div>
                     <div class="formulario">
                         <label for="gmail" class="correo">Correo</label>
-                        <input type="email" name="email" id="gmail" placeholder="Tu correo de contacto">
+                        <input type="email" class="nombre-email" name="email" id="gmail" placeholder="Tu correo de contacto">
                     </div>
                     <div class="formulario">
                         <label for="mensaje">Mensaje</label>
@@ -212,8 +217,8 @@
         </section>
 
         <!--Video-->
-        <section id="video" class="mx-4 mt-5 ms-md-5 mb-5">
-            <h1>Video</h1>
+        <section id="video" class="section-video">
+            <h1 class="title">Video</h1>
             <div class="video">
                 <iframe width="450" height="205" src="https://www.youtube.com/embed/zo6e5S1VMm0?si=01pLeS-2V4dbN7PR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
@@ -238,7 +243,7 @@
     <footer class="bg-dark">
         <!--Copyrigth-->
         <section>
-            <article class="text-light p-3">
+            <article class="article-copyrigth text-light p-3">
                 <script type="text/javascript">
 
                     copyright = new Date();
